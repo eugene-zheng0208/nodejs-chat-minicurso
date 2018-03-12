@@ -1,0 +1,118 @@
+div {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* utils */
+.btn.btn-danger {
+	font-size: 1.2em;
+}
+	.btn.btn-danger .glyphicon {
+		top: 2px;
+	}
+
+.container-wrapper {
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.heading {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	z-index: 999;
+	background-color: #eee;
+	border-bottom: 1px solid #aaa;
+}
+
+.list-messages {
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	background-color: #fff;
+	margin-top: 60px;
+	margin-bottom: 10px;
+	padding: 15px 40px 30px 30px;
+}
+	.list-messages .row .message-item {
+		word-wrap: break-word;
+	}
+
+.footer {
+	padding: 10px;
+	width: 100%;
+	z-index: 999;
+	position: fixed;
+	bottom: 0;
+	background-color: #eee;
+	border-top: 1px solid #aaa;
+}
+	.footer .submit-input {
+		padding-left: 0;
+	}
+	.footer input[type=submit] {
+		width: 100%;
+	}
+
+/* Login page */
+.center-all-container {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	.login-container {
+		width: 25%;
+		height: 25%;
+		background-color: #eee;
+		border: 1px solid #aaa;
+		position: relative;
+		border-radius: 4px;
+	}
+		.login-container .login-form-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			text-align: center;
+		}
+			.login-container .login-form-wrapper input {
+				margin-bottom: 10px;
+			}
+			.login-container .login-form-wrapper input:last-child {
+				margin-bottom: 0;
+			}
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	.login-container {
+		width: 45%;
+		height: 25%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.login-container {
+		width: 95%;
+		height: 30%;
+	}
+}
